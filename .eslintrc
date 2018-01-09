@@ -11,7 +11,7 @@
         "mocha": true,
         "es6": true
     },
-
+    /*
     "ecmaFeatures": {
         "arrowFunctions": true,
         "blockBindings": true,
@@ -31,6 +31,7 @@
         "templateStrings": true,
         "jsx": true
     },
+    */
 
     "rules":{
         // Possible errors
