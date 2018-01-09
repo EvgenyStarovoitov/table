@@ -9,8 +9,7 @@
         "browser": true,
         "node": true,
         "mocha": true,
-        "es6": true,
-        "es7": true
+        "es6": true
     },
 
     "ecmaFeatures": {
