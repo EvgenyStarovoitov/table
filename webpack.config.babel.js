@@ -3,7 +3,7 @@ import path from 'path';
 import CleanWebpackPlugin from 'clean-webpack-plugin';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
-const publicPath         = 'http://localhost:8050/public/assets';
+const publicPath         = 'http://localhost:8050/dist';
 const cssName            = process.env.NODE_ENV === 'production' ? 'styles-[hash].css' : 'styles.css';
 const jsName             = process.env.NODE_ENV === 'production' ? 'bundle-[hash].js' : 'bundle.js';
 
