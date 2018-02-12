@@ -41,7 +41,7 @@ module.exports = {
         use:[
           { loader: 'babel-loader' },
           { loader: 'eslint-loader',
-            option: {
+            options: {
               fix: true
             }
           }
