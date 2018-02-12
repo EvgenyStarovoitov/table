@@ -17,7 +17,7 @@
     "babel-eslint": "^8.1.2",
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-decorators": "^6.24.1",
-    "babel-preset-es2017": "0.0.0",
+    "babel-preset-es2017": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "clean-webpack-plugin": "^0.1.17",
     "css-loader": "^0.28.8",
