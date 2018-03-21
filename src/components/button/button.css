@@ -1,0 +1,39 @@
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"]{
+	overflow:visible;
+  width:auto;
+  margin: 0px;
+  padding: 0px;
+  border:none;
+  background: transparent;
+  -webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+::-webkit-file-upload-button{	
+	padding:0;
+	border:0;
+	background:none;
+}
+
+input:focus,
+button:focus{
+      outline: 0;
+}
+
+.button{
+  padding: 5px 20px;
+  /* min-width: 100px; */
+  border: 1px solid grey;
+  border-radius: 5px/5px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:focus, .button:hover{
+  border: 1px solid rgb(192, 188, 188);
+}

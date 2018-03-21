@@ -1,0 +1,10 @@
+.messageList{
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.messageList tr:nth-child(2n){
+  background-color: rgb(236, 236, 236);
+}
