@@ -1,0 +1,8 @@
+.icon-button{
+  border: none;
+  padding: 5px 0;
+}
+
+.icon-button:focus, .icon-button:hover{
+  border:none;
+}

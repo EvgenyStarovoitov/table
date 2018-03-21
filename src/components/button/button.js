@@ -4,7 +4,7 @@ import './button.css';
 
 const Button = ({ ...props }) => (
   <button
-    className='button'
+    className={props.className}
     onClick={props.onClick}
   >
     {props.textButton}
@@ -16,7 +16,12 @@ Button.propTypes = {
     Type.string,
     Type.node
   ]),
-  onClick:Type.func
+  onClick:Type.func,
+  className:Type.string
+};
+
+Button.defaultProps = {
+  className:'button'
 };
 
 export default Button;

@@ -1,31 +1,13 @@
 import React from 'react';
 // import Type from 'prop-types';
-
 import './App.css';
+
 import Button from './button/button.js';
 import MessageList from './messageList/messageList';
 import Heading from './heading/heading';
-
-const data = [
-  {
-    date: '01/12/1991',
-    idmsg: '11jk1h3',
-    status: 2,
-    name: 'Somebody',
-    email: 'servolux@mail.ru',
-    phone: '+1111111',
-    destination: 'Кадры'
-  },
-  {
-    date: '17/11/1991',
-    idmsg: '11131h3',
-    status: 1,
-    name: 'Отьявленный негодяй',
-    email: 'mor4e@mail.ru',
-    phone: '+99999999',
-    destination: 'СБ'
-  }
-];
+import IconButton from './icon-button/icon-button';
+import { IconUi } from './icon/index.js';
+import data from './data';
 
 export default class App extends React.Component {
   static propTypes = {
@@ -55,6 +37,16 @@ export default class App extends React.Component {
           items={data}
           onClick={this.handleMoreLick}
         />
+        <IconButton
+          onClick={this.handleMoreLick}
+        >
+          <IconUi type='left' />
+        </IconButton>
+        <IconButton
+          onClick={this.handleMoreLick}
+        >
+          <IconUi type='right' />
+        </IconButton>
       </div>
     );
   }

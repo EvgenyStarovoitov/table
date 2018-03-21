@@ -3,7 +3,7 @@ import Type from 'prop-types';
 import './message.css';
 
 const Message = ({ ...props }) => (
-  <tr className='message'>
+  <tr className={props.className}>
     <td>
       {props.date}
     </td>
@@ -42,7 +42,12 @@ Message.propTypes = {
   email:Type.string,
   phone:Type.string,
   destination:Type.string,
-  more:Type.node
+  more:Type.node,
+  className:Type.string
+};
+
+Message.defaultProps = {
+  className: 'message'
 };
 
 export default Message;

@@ -10,12 +10,17 @@ const HeadingLevel = {
 };
 
 const Heading = ({ ...props }) => (
-  React.createElement(`h${HeadingLevel[props.size]}`, [ ...props ], [ props.children ])
+  React.createElement(`h${HeadingLevel[props.size]}`, { className:props.className }, [ props.children ])
 );
 
 Heading.propTypes = {
   children: Type.oneOfType([Type.arrayOf(Type.node), Type.node]),
-  size:Type.oneOf(['s', 'm', 'l', 'xl'])
+  size:Type.oneOf(['s', 'm', 'l', 'xl']),
+  className:Type.string
+};
+
+Heading.defaultProps = {
+  className: 'heading'
 };
 
 export default Heading;
